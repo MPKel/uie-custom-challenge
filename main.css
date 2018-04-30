@@ -72,6 +72,9 @@ html, body {
   text-align: center;
   margin: 0;
 }
+.l-sub1 {
+  margin-top: 2rem;
+}
 
 .subtitle-special {
   color: #c56c76;
@@ -100,7 +103,7 @@ main {
 }
 
 .first-part {
-  background: url("images/background.jpg") left 0% bottom 70%/cover no-repeat border-box;
+  background: linear-gradient(rgba(0,0,0, .3),rgba(0,0,0, .3)),url("images/background.jpg") left 0% bottom 70%/cover no-repeat border-box;
   background-attachment: fixed;
   height: 50vh;
   width: 100%;
@@ -110,6 +113,7 @@ main {
 }
 
 .quick-sell {
+  padding: 2rem .5rem 2rem 2rem;
   max-width: 61rem;
   height: 50vh;
   display: block;
@@ -117,14 +121,7 @@ main {
   margin: 1.5rem auto 1rem auto;
 }
 
-.quick-sell__title {
-  line-height: 1.25;
-  text-align: left;
-  font-size: 1.9rem;
-  font-weight: bold;
-  margin-bottom: .4rem;
-  color: #5c626a;
-}
+
 
 .quick-sell__list-cotainer {
   width: 65%;
@@ -134,8 +131,8 @@ main {
 }
 
 .quick-sell__list-cotainer h3 {
-  color: #5c626a;
-  font-size: 1.295624rem;
+  color: #f5f3f0;
+  font-size: 1.495624rem;
   margin: .3rem 0 0 0;
 }
 
@@ -146,11 +143,12 @@ main {
   display: inline-block;
   /* border: 1px solid orange; */
   text-align: left;
+  color: #f5f3f0;
 }
 
 .quick-sell_item {
   margin: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .quick-sell__aside-container {
@@ -168,7 +166,7 @@ main {
   border: 1px solid #ddd;
   padding: .75rem;
   margin: .5rem;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, .4);
+  box-shadow: 2px 2px 1px rgba(255, 255, 255, .4);
   text-shadow: 1px 0 1px white;
 }
 
