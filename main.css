@@ -61,7 +61,6 @@ html, body {
   background-color: #f5f3f0;
   display: inline-block;
   text-decoration: none;
-  border-top-style: solid;
   border-bottom-style: solid;
 }
 
@@ -356,22 +355,18 @@ main {
   width: 25%;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 46rem) {
 
   .main-header {
     height: 100vh;
   }
 
-  .logo__container a {
-    margin: 6.3rem 0 1.2rem 0;
+  .logo__container {
+    height: 57vh;
   }
 
-  .logo__container img {
-    width: 70%;
-  }
-
-  #logo_subtitle-container {
-    height: 40vh;
+  .logo__subtitle {
+    font-size: 1.4rem;
   }
 
   .quick-sell__list-cotainer {
@@ -383,7 +378,68 @@ main {
     margin-left: .5rem;
   }
 
-  .quick-sell__aside {
+  .quick-sell__aside-container {
+    display: none;
+  }
+
+
+  .first-part {
+    height: 110vh;
+  }
+
+  .quick-sell__aside button {
+    display: block;
+  }
+
+  .special_aside {
+    display: inline-block;
+    width: 80%;
+  }
+
+  .main-footer {
+    height: 44vh;
+    font-size: .8rem;
+  }
+
+}
+
+
+@media (max-width: 40rem) {
+
+  .main-header {
+    height: 100vh;
+  }
+
+  .logo__container {
+    height: 65vh;
+  }
+
+  .logo__container a {
+    margin: 6.3rem 0 1.2rem 0;
+  }
+
+  .logo__container img {
+    width: 70%;
+  }
+
+  #logo_subtitle-container {
+    height: 35vh;
+  }
+
+  .logo__subtitle {
+    font-size: 1.7rem;
+  }
+
+  .quick-sell__list-cotainer {
+    width: 100%;
+    margin: auto;
+  }
+
+  .quick-sell__list-cotainer h3 {
+    margin-left: .5rem;
+  }
+
+  .quick-sell__aside-container {
     display: none;
   }
 
@@ -394,6 +450,19 @@ main {
 
   .full-descrip__grid-section {
     margin: 0;
+  }
+
+  .full-descrip__bio {
+    width: 20%;
+  }
+
+  .full-descrip__text {
+    width: 75%;
+  }
+
+  .bio-headshot img {
+    height: 100%;
+    width: 100%;
   }
 
   .special_aside {
