@@ -13,11 +13,25 @@ html, body {
 
 .main-header {
   top: 0;
-  /* background: linear-gradient(to right, rgba(245,243,240,1), 20%, rgba(255,255,255,0), 80%, rgba(245,243,240,1)), linear-gradient(to bottom, rgba(255,255,255,0), 90%, rgba(245,243,240,1)), url("images/background.jpg") left 0% bottom 70%/cover no-repeat border-box; */
   width: 100%;
-  height: 50vh;
+  height: 47vh;
   align-content: center;
   z-index: 20;
+}
+
+#header-brand {
+  padding: 1rem;
+  position: fixed;
+  background: url("images/background.jpg") left 0% bottom 70%/cover no-repeat border-box;
+  background-attachment: fixed;
+  top: 0%;
+  left: 0%;
+  width: 20%;
+  height: 8%;
+  z-index: 200;
+  border-radius: 0 8px 8px 0;
+  display: none;
+
 }
 
 .logo__container {
@@ -37,7 +51,7 @@ html, body {
   vertical-align: middle;
   display: inline-block;
   text-decoration: none;
-  margin: 3.4rem 0 1.2rem 0;
+  margin: 4.1rem 0 1.2rem 0;
   height: 35%;
 }
 
@@ -65,9 +79,7 @@ html, body {
   border-bottom-style: solid;
 }
 
-.appear {
-  
-}
+
 
 .logo__subtitle {
   font-family: 'Bitter', serif;
@@ -77,7 +89,7 @@ html, body {
   margin: 0;
 }
 .l-sub1 {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .subtitle-special {
@@ -86,7 +98,7 @@ html, body {
 }
 
 .logo__button {
-  margin: 2rem auto .3rem auto;
+  margin: 2rem auto .6rem auto;
   font-size: 1.125rem;
   padding: .6rem 1rem;
   color: #f5f3f0;
@@ -103,7 +115,9 @@ html, body {
 .stickIt {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
+  border: 1px solid black;
+
 }
 
 main {
@@ -116,8 +130,6 @@ main {
   background-attachment: fixed;
   height: 50vh;
   width: 100%;
-  /* background:linear-gradient(to right, rgba(245,243,240,1), 10%, rgba(255,255,255,0), 90%, rgba(245,243,240,1)), url("images/background.jpg") left 0% bottom 70%/cover no-repeat border-box;
-  background-attachment: fixed; */
   margin:0 auto;
 }
 
@@ -134,7 +146,6 @@ main {
 
 .quick-sell__list-cotainer {
   width: 65%;
-  /* border: 2px dashed black; */
   text-align: justify;
   float: left;
 }
@@ -160,6 +171,16 @@ main {
   font-size: 1.4rem;
 }
 
+.quick-sell_item a {
+  text-decoration: none;
+  color: #f5f3f0;
+}
+
+.quick-sell_item a:hover,
+ .quick-sell_item a:active{
+  text-decoration:underline;
+}
+
 .quick-sell__aside-container {
   text-align: center;
   width: 33%;
@@ -176,7 +197,7 @@ main {
   padding: .75rem;
   margin: .5rem;
   box-shadow: 2px 2px 1px rgba(255, 255, 255, .4);
-  text-shadow: 1px 0 1px white;
+  text-shadow: 1px 0 0px #5c626a;
 }
 
 .quick-sell__aside a {
@@ -210,10 +231,7 @@ main {
 }
 
 .second-part {
-  /* height: 100vh; */
   width: 100%;
-  /* background:linear-gradient(to right, rgba(245,243,240,1), 10%, rgba(255,255,255,0), 90%, rgba(245,243,240,1)), url("images/background.jpg") left 0% bottom 70%/cover no-repeat border-box;
-  background-attachment: fixed; */
   margin:auto;
 }
 
@@ -319,12 +337,13 @@ main {
 .special_aside {
   width: 35%;
   margin: auto;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, .4);
 }
 
 .main-footer {
   /* position: absolute; */
   /* bottom: 0; */
-  margin: auto;
+  margin: 1rem auto 0 auto;
   text-align: center;
   vertical-align: top;
   width: 100%;
@@ -350,4 +369,56 @@ main {
 .main-footer img {
   height: 25%;
   width: 25%;
+}
+
+@media (max-width: 40rem) {
+
+  .main-header {
+    height: 100vh;
+  }
+
+  .logo__container a {
+    margin: 6.3rem 0 1.2rem 0;
+  }
+
+  .logo__container img {
+    width: 70%;
+  }
+
+  .quick-sell__list-cotainer {
+    width: 100%;
+    margin: auto;
+  }
+
+  .quick-sell__list-cotainer h3 {
+    margin-left: .5rem;
+  }
+
+  .quick-sell__aside {
+    display: none;
+  }
+
+  #logo_subtitle-container {
+    border-bottom: none;
+  }
+
+  .first-part {
+    height: 110vh;
+  }
+
+  .full-descrip__grid-section {
+    margin: 0;
+  }
+
+  .special_aside {
+    display: inline-block;
+    width: 80%;
+  }
+
+
+  .main-footer {
+    height: 25vh;
+    font-size: .5rem;
+  }
+
 }
