@@ -19,20 +19,6 @@ html, body {
   z-index: 20;
 }
 
-#header-brand {
-  padding: 1rem;
-  position: fixed;
-  background: url("images/background.jpg") left 0% bottom 70%/cover no-repeat border-box;
-  background-attachment: fixed;
-  top: 0%;
-  left: 0%;
-  width: 20%;
-  height: 8%;
-  z-index: 200;
-  border-radius: 0 8px 8px 0;
-  display: none;
-
-}
 
 .logo__container {
     background: url("images/background.jpg") left 0% bottom 70%/cover no-repeat border-box;
@@ -116,7 +102,6 @@ html, body {
   position: fixed;
   top: 0;
   width: 100%;
-  border: 1px solid black;
 
 }
 
@@ -128,7 +113,7 @@ main {
 .first-part {
   background: linear-gradient(rgba(0,0,0, .3),rgba(0,0,0, .3)),url("images/background.jpg") left 0% bottom 70%/cover no-repeat border-box;
   background-attachment: fixed;
-  height: 50vh;
+  height: 53vh;
   width: 100%;
   margin:0 auto;
 }
@@ -385,6 +370,10 @@ main {
     width: 70%;
   }
 
+  #logo_subtitle-container {
+    height: 40vh;
+  }
+
   .quick-sell__list-cotainer {
     width: 100%;
     margin: auto;
@@ -398,9 +387,6 @@ main {
     display: none;
   }
 
-  #logo_subtitle-container {
-    border-bottom: none;
-  }
 
   .first-part {
     height: 110vh;
