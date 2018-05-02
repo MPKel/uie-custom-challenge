@@ -3,6 +3,7 @@
 }
 
 html, body {
+  font-family: "lft-etica", "Helvetica Neue", Arial, sans-serif;
   /* height: 100vh; */
   margin: 0;
   color: #797166;
@@ -319,7 +320,7 @@ main {
 }
 
 .special_aside {
-  width: 35%;
+  width: 38%;
   margin: auto;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, .4);
 }
@@ -344,6 +345,7 @@ main {
   text-align: left;
   vertical-align: top;
   line-height: 1.5;
+  font-size: .875rem;
 }
 
 .main-footer__text a {
@@ -384,7 +386,7 @@ main {
 
 
   .first-part {
-    height: 110vh;
+    height: 130vh;
   }
 
   .quick-sell__aside button {
@@ -397,8 +399,9 @@ main {
   }
 
   .main-footer {
-    height: 44vh;
+    height: 49vh;
     font-size: .8rem;
+    padding: 0;
   }
 
 }
@@ -433,6 +436,7 @@ main {
   .quick-sell__list-cotainer {
     width: 100%;
     margin: auto;
+    text-align: center;
   }
 
   .quick-sell__list-cotainer h3 {
@@ -445,7 +449,7 @@ main {
 
 
   .first-part {
-    height: 110vh;
+    height: 125vh;
   }
 
   .full-descrip__grid-section {
@@ -472,8 +476,9 @@ main {
 
 
   .main-footer {
-    height: 25vh;
+    height: 44vh;
     font-size: .5rem;
+    padding: 0;
   }
 
 }
